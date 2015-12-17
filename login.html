@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Login</title>
+	<style>
+	div {
+		text-align: center;
+		margin: 20px;
+	}
+	label, input, button {
+		font-size: 24px;
+		font-family: sans-serif;
+	}
+	input, button {
+		border-color: black;
+		border-radius: 4px;
+		padding: 4px;
+	}
+	input {
+		background-color: #fff;
+	}
+	button {
+		background-color: #eee;
+	}
+	label span {
+		display: inline-block;
+		width: 125px;
+	}
+	</style>
+	<script>
+		function login() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			console.log('Logging in as', username, ':', password);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<label><span>Username:</span>
+			<input type="text" id="username" autofocus="true" />
+		</label>
+	</div>
+	<div>
+		<label><span>Password:</span>
+			<input type="password" id="password"/>
+		</label>
+	</div>
+	<div>
+		<button id="login" onclick="javascript:login()"/>Log in</button>
+	</div>
+</body>
+</html>
